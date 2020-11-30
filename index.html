@@ -4,6 +4,8 @@
     <meta charset="UTF-8">
     <!--viewport-->
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+
     
     <title>Password Generator</title>
 
@@ -13,37 +15,32 @@
 
 <!--link to css-->
 <link rel="stylesheet" href="style.css">
-
-
-
-<!--link to Javascript-->
-<script src="password.js"></script>
 </head>
+
+
 <body>
+    <div class="wrapper">
 
-<!--nav bar top-->
-<nav class="navbar navbar-light bg-light">
-    <span class="navbar-text">
-     Password Generator
-    </span>
-  </nav>
-
-<!--generator password interface-->
-  <div class="container">
-      <div class="row">
-          <div class="col-lg-8 col-sm-12 mx-auto" >
-              <div class="content">
-                  <h4>Ramdom Password Generator</h4>
-                  <br>
-                  <input type="text" id="display">
-                  <br>
-                  <input type="range" min="8" max="128" name="slider" id="slider">
-                  <br>
-                  <button onclick="">Generate password</button>
-
-
-
-
+<header><!--header-->
+<h1>Password Generator</h1>
+</header>
+<div class="card">
+    <dix class="card-header">
+        <h2>Generate a Password</h2>
+    </dix>
+    <div class="card-body">
+        <textarea
+            readonly
+            id="password"
+            placeholder="Your Secure Password"
+            aria-label="Generated Password"
+          ></textarea>
+    </div>
+    <div class="card-footer">
+        <button id="generate" class="btn">Generate Password</button>
+      </div>
+</div>
+  
               </div><!-- for content-->
           </div><!--for col-->
 
@@ -58,6 +55,9 @@
 
  
 
+</div><!--closing for wrapper-->
+<!--link to Javascript-->
+<script src="password.js"></script>
 
 </body>
 </html>

@@ -1,23 +1,18 @@
-/*navbar*/
-.navbar {
-    padding: 30px;
- 
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
 }
 
-.content {
-    margin-top: 10px;
-    margin-bottom: 10px;
-    background-color: hotpink;
-    padding: 20px;
-    width: 100%;
+body {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    background-color:lightgoldenrodyellow;
+}
+
+.wrapper {
+    padding-top: 20px;
+    padding-left: 30px;
+    padding-right: 30px;
 
 }
 
-#display {
-    width: 100%;
-    padding: 40px;
-}
-
-#slider {
-    width: 100%;
-}

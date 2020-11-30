@@ -1,36 +1,58 @@
 //user confirm password criteria
 //confirm lower case
-let lowerCaseChar = confirm("Use Lowercase charactors?");
+
+var lowerCaseChar = confirm("Do you want to use Lowercase charactors?");
 //confirm upper case
-let upperCaseChar = confirm("Use Uppercase charactors?");
-//confirm numbers
-let numberChar = confirm("Use Numbers?");
+var upperCaseChar = confirm("Do you want to use UpperCase charactors?");
+//confirm numbersvar
+var numberChar = confirm("Do you want to use Numbers?");
 //confirm symbols
-let symbolChar = confirm("Use symbols?");
+var symbolChar = confirm("Do you want to use Symbols?");
 
-//when user click generate botton
-addEventListener
-
-//generate password
-function generate(){
-
-let complexity = document.getElementById("slider").value;
-
-let vlues = "abcdefghijklmnopqstvxyzABCDEFGHIKLMNOPQRSTVXYZ123456789#$%&-=_";
-
-let dataset = "";
-
-//clock the bottum to generate the password
-
-//Condition to making charactors
+//ask password length between 8 to 128 charactor
+var passWordLength = prompt("How long would you like to have your password?")
 
 
-//computer pick ramdom charactor up to 10
-for(var i=0; i <= complexity.length; i++){
-var passWord = dataset + value.charAt(Math.floor(Math.ramdom() * Math.floow(values.length -1)));
+//generating password based on what user choose
+var dataset = "";
 
+var lowerCaseCharSet = "abcdefghijklmnopqrstuvwxyz";
+var upperCaseCharSet = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
+var numberCharSet = "123456789";
+var symbolCharSet = "#$%&()=!?@"
+
+if(lowerCaseChar){
+   dataset = dataset + lowerCaseCharSet;
+} 
+if(upperCaseChar){
+    dataset = dataset + upperCaseCharSet;
+}
+if(numberCharSet){
+    dataset = dataset + numberChar;
+}
+if(symbolCharSet){
+    dataset = dataset + symbolChar;
+}
+if(passWordLength >= 8 && passWordLength <= 128){
+    passWordLength === dataset.length;
+}else{
+    alert("your password length has to be between 8 to 128 charactors");
 }
 
-document.getElementById("display").value = passWord;
-
+function getRandomChar(charset){
+    let randomIndex = Math.floor(Math.random() * charset.length);
+    return charset[randomIndex];
 }
+
+
+
+//function add(lowerCaseCharSet, upperCaseCharSet, numberCharSet, symbolCharSet){
+ //var result = [lowerCaseCharS + upperCaseCharSet + numberCharSet + symbolCharSet];
+// return result;
+ ////console.log(result);
+}
+
+
+//computer pick ramdom charactor depend of the length user choose
+
+
