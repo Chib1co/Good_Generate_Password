@@ -39,18 +39,37 @@ if(passWordLength >= 8 && passWordLength <= 128){
     alert("your password length has to be between 8 to 128 charactors");
 }
 
-function getRandomChar(charset){
-    let randomIndex = Math.floor(Math.random() * charset.length);
-    return charset[randomIndex];
-}
+document.getElementById("generate").onclick = 
+
+function add(lowerCaseCharSet, upperCaseCharSet, numberCharSet, symbolCharSet){
+    var result = [lowerCaseCharSet + upperCaseCharSet + numberCharSet + symbolCharSet];
+    return result;
+    console.log(result);
+    }//I need something to put result to detaset equal
+     // detaset length has to be same as passwroed length
+
+// Get the button, and when the user clicks on it, execute myFunction
 
 
+   
+
+// global variable
+var password = "";
+
+for (var password = 0; password < 8; password++) {
+    
+    //I need 
+
+
+console.log(password);
+
+};
 
 //function add(lowerCaseCharSet, upperCaseCharSet, numberCharSet, symbolCharSet){
  //var result = [lowerCaseCharS + upperCaseCharSet + numberCharSet + symbolCharSet];
 // return result;
  ////console.log(result);
-}
+
 
 
 //computer pick ramdom charactor depend of the length user choose
