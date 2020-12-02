@@ -19,24 +19,28 @@
 
 
 <body>
-    <div class="wrapper">
+   <!-- <div class="wrapper"> -->
 
 <header><!--header-->
 <h1>Password Generator</h1>
 </header>
-<div class="card">
-    <dix class="card-header">
+<div class="container">
+    <dix class="row">
+        <header></header>
         <h2>Generate a Password</h2>
-    </dix>
-    <div class="card-body">
+    </header>
+    </div>
+    <div class="row">
+        <div col-12 sm-6></div>
         <textarea
             readonly
             id="password"
             placeholder="Your Secure Password"
             aria-label="Generated Password"
           ></textarea>
-    </div>
-    <div class="card-footer">
+        </div>
+    <!--</div>-->
+    <div class="row">
         <button id="generate" class="btn">Generate Password</button>
       </div>
 </div>
