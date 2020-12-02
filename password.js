@@ -1,5 +1,6 @@
 //user confirm password criteria
 //confirm lower case
+function firstFunction(){   
 
 let lowerCaseChar = confirm("Do you want to use Lowercase charactors?");
 //confirm upper case
@@ -41,10 +42,8 @@ if(passWordLength < 8 || passWordLength > 128){
 
 console.log(dataset);
 
-// Generate the button, and when the user clicks on it, execute the function
-let generateEl = document.getElementById("generate");
 
-generateEl.addEventListener("click", () => {
+// Generate the button, and when the user clicks on it, execute the function
 
     let pass = "";
     for (let i = 0; i < passWordLength; i++) {
@@ -55,14 +54,22 @@ generateEl.addEventListener("click", () => {
     }
     console.log(pass)
 
-
     return pass ;
+};
 
 
+
+function myFunction(){
+    pass = firstFunction()
 let textAreaEl = document.querySelector("#password");
+
+
    
 //textAreaEl.textContent = pass;
 textAreaEl.value = pass;
-textAreaEl.textContent = "this is new password";
 
-});
+}
+
+let generateEl = document.getElementById("generate");
+
+generateEl.addEventListener("click", myFunction) 
