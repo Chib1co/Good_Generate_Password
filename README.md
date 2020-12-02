@@ -17,6 +17,11 @@ I have made password generator used Javascript file
     * Generated password is to be shown on textarea 
     * If the user click again, user can go same confirm and promt again to generate new password
     ![Generated Password Shown](Images/generatePassword.png)
+# Additional
+  * I know apprearence is part of the criteria. But I have just changed 2 things. 
+     * 1. changed bottn color. Just because red botton seems warining sign to me. 
+     * 2. Changed the text of the botton to "Click Here To Generate Password" so easier for user to know what they need to do. I thought.    
 
 # What I learned from this homework
- 
+ * I have started this course without any background. So when I was using internet just as regular life, I was not thinking about how all those function is working behind the screen which I was seeing. This is defenitly not easy to understand, I still have so many questions and things I need to work to better understanding. But I am still enjoying what I am learning everyday and knowing how this web world has been created. 
+
