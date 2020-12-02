@@ -59,7 +59,7 @@ console.log(dataset);
 
 
 
-function myFunction(){
+function writePassword(){
     pass = firstFunction()
 let textAreaEl = document.querySelector("#password");
 
@@ -70,6 +70,6 @@ textAreaEl.value = pass;
 
 }
 
-let generateEl = document.getElementById("generate");
+let generateEl = document.querySelector("#generate")
 
-generateEl.addEventListener("click", myFunction) 
+generateEl.addEventListener("click", writePassword) 
