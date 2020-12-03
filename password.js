@@ -16,7 +16,7 @@ let passWordLength = parseInt(prompt("How long would you like to have your passw
 //console.log to check
 console.log(lowerCaseChar, upperCaseChar, numberChar, symbolChar, passWordLength);
 
-//generating password based on what user choose
+//setting carachtors based on what user choose to use
 let dataset = "";
 
 let lowerCaseCharSet = "abcdefghijklmnopqrstuvwxyz";
@@ -24,6 +24,7 @@ let upperCaseCharSet = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
 let numberCharSet = "123456789";
 let symbolCharSet = "#$%&()=!?@"
 
+//making condition to add into dateset
 if(lowerCaseChar){
    dataset = dataset + lowerCaseCharSet;
 } 
@@ -43,7 +44,7 @@ if(passWordLength < 8 || passWordLength > 128){
 console.log(dataset);
 
 
-// Generate the button, and when the user clicks on it, execute the function
+// roop the charactores until reach the length user choose
 
     let pass = "";
     for (let i = 0; i < passWordLength; i++) {
@@ -58,18 +59,19 @@ console.log(dataset);
 };
 
 
-
+//generating password use first function
 function writePassword(){
     pass = firstFunction()
 let textAreaEl = document.querySelector("#password");
 
 
    
-//textAreaEl.textContent = pass;
+
 textAreaEl.value = pass;
 
 }
 
+//Click the cotton to start the event
 let generateEl = document.querySelector("#generate")
 
 generateEl.addEventListener("click", writePassword) 
